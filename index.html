@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://enterprise-services-group.github.io/authux-prototype-future/" />
+    <script>
+        // Configuration
+        const destination = "https://enterprise-services-group.github.io/authux-prototype-future";
+        
+        // Logic: Grab the current sub-path and append it to the new domain
+        const path = window.location.pathname.replace(/^\/prototype-future/, "");
+        const newUrl = destination + path + window.location.search + window.location.hash;
+        
+        // Execute instant redirect
+        window.location.replace(newUrl);
+    </script>
+    <meta http-equiv="refresh" content="0; url=https://enterprise-services-group.github.io/authux-prototype-future/">
+</head>
+<body style="background: #ffffff;">
+</body>
+</html>
